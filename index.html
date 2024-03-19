@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math.js project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <!-- Title of the application -->
+      <h1>Math expression evaluator</h1>
+      <!-- Input field for entering the mathematical expression -->
+      <input
+        class="expression"
+        type="text"
+        id="expression"
+        placeholder="Enter the expression"
+      />
+      <!-- Button to calculate the result of the expression -->
+      <button class="result" onclick="calculate()">Result</button>
+      <br />
+      <br />
+      <!-- Button to clear all input fields -->
+      <button class="clear" onclick="clearInput()">Clear</button>
+      <br />
+      <!-- Placeholder for displaying the result of the expression -->
+      <p id="result"></p>
+      <!-- Placeholder for displaying a fact about the result (if applicable) -->
+      <p id="fact"></p>
+    </div>
+    <!-- JavaScript file for handling calculations and interactions -->
+    <script src="script.js"></script>
+    <!-- Use a CDN link or a relative file path for Math.js for mathematical evaluation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"></script>
+  </body>
+</html>
